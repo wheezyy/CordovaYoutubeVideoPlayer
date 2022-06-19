@@ -58,6 +58,7 @@ public class YouTubeActivity extends YouTubeBaseActivity implements YouTubePlaye
     public void onError(
             com.google.android.youtube.player.YouTubePlayer.ErrorReason arg0) {
         updateLog("onError(): " + arg0.toString());
+            setResult(arg0.toString());
         finish();
     }
 
