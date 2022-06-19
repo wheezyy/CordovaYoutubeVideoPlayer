@@ -6,13 +6,13 @@ YoutubeVideoPlayer.prototype.openVideo = function(YTid, callback) {
 	exec(function(result) {
 		console.log(result);
 		if(callback){
-			callback('closed');
+			callback(result);
 		}
 	},
 	function(error) {
 		console.log(error);
 		if(callback){
-			callback('error');
+			callback(error);
 		}
 	},
 	"YoutubeVideoPlayer",
